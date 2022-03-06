@@ -1,0 +1,23 @@
+.card{
+    background-color: rgb(109, 151, 250);
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+.card > img{
+    width: 90%;
+    height: auto;
+}
+
+.card > button {
+    width: auto;
+    font-family: 'Courier New', Courier, monospace;
+}

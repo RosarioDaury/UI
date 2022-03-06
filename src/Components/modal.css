@@ -1,0 +1,18 @@
+.modal{
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    top: 150px;
+    right: 0;
+    bottom: 0;
+    left: 350px;
+    z-index: 999;
+    background-color: rgb(68, 94, 155);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal > div > button {
+    width: 10%;
+}

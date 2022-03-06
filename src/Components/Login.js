@@ -1,6 +1,25 @@
+import { useContext, useState } from "react";
+import { LogInContext } from "../Context/logInContext";
 import "./login.css"
 
+const initialData =   {
+    email:"",
+    pass:""
+}
+
 const Login = () => {
+    const [form, setForm] = useState(initialData);
+    const {handleAuth} = useContext(LogInContext);
+
+    const handleChange = (e) => {
+        setForm(
+            {
+                ...form,
+                [e.target.name] : e.target.value
+            }
+        )
+    }
+
     return(
         <div className="login-conteiner">
             <div className="logo">
@@ -9,11 +28,10 @@ const Login = () => {
             <div className="login">
                 <h2>Title Log In</h2>
                 <form>
-                    <input name="email" id="email" placeholder="E-mail"/>
-                    <input name="pass" id="pass" placeholder="PassWord"/>
+                    <input type="text" name="email" id="email" placeholder="E-mail" value={form.email} onChange={handleChange}/>
+                    <input type="password" show="*" name="pass" id="pass" placeholder="PassWord" value={form.pass} onChange={handleChange}/>
                 </form>
-                <br/>
-                <button className="log">Log In</button>
+                <button className="log" onClick={() => handleAuth(form)}>Log In</button>
                 <a href="/#">Forgot Password</a>
                 <br/>
                 <hr/>

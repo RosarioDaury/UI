@@ -1,0 +1,29 @@
+.logOut{
+    width: auto;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(109, 151, 250);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cards-grid{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.title{
+    margin-left: 2rem;
+}
+
+.log-out-button{
+    margin-right: 2rem;
+}
+
+.log-out-button > button:hover{
+    background-color: rgb(211, 211, 211);
+}

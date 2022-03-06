@@ -1,0 +1,24 @@
+.form-conteiner{
+    margin: auto;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 50%;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+}
+
+.form-conteiner > form > input[type="text"] {
+    width: 80%;
+    height: 10px;
+}
+
+.form-conteiner > form > input[type="submit"]{
+    background-color: rgb(109, 151, 250);
+    color: white;
+}
+
+.form-conteiner > form > input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(66, 94, 161);
+}
